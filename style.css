@@ -1,0 +1,43 @@
+:root {
+  --c-neutral-100: hsl(0, 0%, 100%);
+  --c-neutral-200: hsl(0, 0%, 98%);
+  --c-neutral-400: hsl(0, 0%, 41%);
+  --c-neutral-900: hsl(0, 0%, 8%);
+
+  --c-body: var(--c-neutral-900);
+  --bg-body: var(--c-neutral-100);
+
+  --ff-primary: "Epilogue", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+
+  --fw-body: var(--fw-regular);
+  --fw-heading: var(--fw-bold);
+
+  --fs-500: 1rem;
+  --fs-600: 1.2rem;
+  --fs-700: 2.2rem;
+  --fs-800: 5rem;
+
+  --fs-nav: var(--fs-500);
+  --fs-body: var(--fs-500);
+  --fs-heading: var(--fs-700);
+
+  --body-v-padding: 1.5rem;
+  --body-h-padding: 1rem;
+}
+
+/* General styling */
+
+body {
+  color: var(--c-body);
+  background-color: var(--bg-body);
+
+  font-family: var(--ff-body);
+  font-weight: var(--fs-body);
+  font-size: var(--fs-body);
+}
