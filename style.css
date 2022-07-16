@@ -207,3 +207,69 @@ body {
   transform: rotate(180deg);
 }
 
+/* Main content */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__wrapper {
+  aspect-ratio: 750 / 564;
+  max-height: 50vh;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.content {
+  text-align: center;
+  padding: 2.5rem var(--body-h-padding);
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.content__heading {
+  font-size: var(--fs-heading);
+  margin-bottom: 1rem;
+}
+
+.content__description {
+  color: var(--c-neutral-400);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.content__btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin-bottom: 3rem;
+
+  color: var(--c-neutral-100);
+  background-color: hsl(0, 0%, 8%);
+  border-radius: 15px;
+
+  text-decoration: none;
+  line-height: 100%;
+}
+
+
+.content__sponsors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.5rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__sponsors img {
+  max-height: 100%;
+  margin-inline: auto;
+}
