@@ -367,3 +367,57 @@ body {
     left: 0;
   }
 
+  /* Main content */
+
+  .container {
+    flex-direction: row-reverse;
+    gap: 6rem;
+    margin-inline: 10vw;
+  }
+
+  .container > * {
+    flex: 1 1 0;
+  }
+
+  .hero__wrapper {
+    max-height: 100%;
+    width: 100%;
+    aspect-ratio: initial;
+  }
+
+  .hero {
+    background-image: url("/images/image-hero-desktop.png");
+    background-position: right;
+    max-height: initial;
+    height: 100%;
+  }
+
+  .content {
+    padding: 0;
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  .content__heading {
+    line-height: 1;
+    letter-spacing: -0.1rem;
+    margin-top: 6rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .content__description {
+    line-height: 1.5;
+    width: 45ch;
+    margin-bottom: 3.5rem;
+  }
+
+  .content__btn {
+    padding-block: 1rem;
+    margin-bottom: 7rem;
+    border: 1px solid var(--c-neutral-900);
+  }
+
+  .content__sponsors {
+    grid-template-rows: 2rem;
+  }
+}
