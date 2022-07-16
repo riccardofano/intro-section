@@ -129,6 +129,7 @@ body {
 
 .nav__list a {
   text-decoration: none;
+  color: var(--c-neutral-400);
 }
 
 .nav__list a:visited {
