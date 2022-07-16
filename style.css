@@ -354,8 +354,9 @@ body {
     transform: rotate(0);
   }
 
-  /* Only active sublist on hover */
-  .nav__list li:hover > .nav__sublist {
+  /* Only active sublist on hover or focus */
+  .nav__list li:hover > .nav__sublist,
+  .nav__list li:focus-within > .nav__sublist {
     width: max-content;
     max-height: initial;
     padding: 1rem 2rem;
