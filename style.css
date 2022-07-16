@@ -283,3 +283,87 @@ body {
   max-height: 100%;
   margin-inline: auto;
 }
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: var(--fs-600);
+    --fs-heading: var(--fs-800);
+    --bg-body: var(--c-neutral-200);
+    --body-h-padding: 2.5rem;
+  }
+
+  .header {
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+
+    position: initial;
+    z-index: initial;
+
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    transform: initial;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__list > li {
+    overflow: initial;
+  }
+
+  .nav__sublist {
+    position: absolute;
+  }
+
+  .nav__sublist > li {
+    margin-left: 0;
+  }
+
+  .nav__sublist > li:first-child {
+    margin-top: 0;
+  }
+
+  .nav__btn {
+    padding-inline: 1.25rem;
+  }
+
+  /* Remove sublist activation via click */
+  .nav__list li[data-active="true"] > .nav__sublist {
+    max-height: 0;
+  }
+  .nav__list li[data-active="true"] .nav__arrow {
+    transform: rotate(0);
+  }
+
+  /* Only active sublist on hover */
+  .nav__list li:hover > .nav__sublist {
+    width: max-content;
+    max-height: initial;
+    padding: 1rem 2rem;
+    background-color: var(--c-neutral-100);
+    border-radius: 10px;
+    box-shadow: 0 0 3rem hsl(0, 0%, 8%, 20%);
+
+    top: 100%;
+    left: 0;
+  }
+
