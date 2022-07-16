@@ -178,3 +178,32 @@ body {
   border: 1px solid var(--c-neutral-400);
   border-radius: 15px;
 }
+
+
+/* Nav is active */
+
+.nav__toggle[aria-expanded="true"] {
+  background-image: url("/images/icon-close-menu.svg");
+  width: 26px;
+  height: 26px;
+}
+
+.nav[data-active="true"] {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0);
+}
+
+.nav[data-active="true"] ~ .overlay {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.nav__list li[data-active="true"] > .nav__sublist {
+  max-height: 10rem;
+}
+
+.nav__list li[data-active="true"] .nav__arrow {
+  transform: rotate(180deg);
+}
+
