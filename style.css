@@ -247,6 +247,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.hidden__mobile {
+  display: none;
+}
+
 .content__description {
   color: var(--c-neutral-400);
   line-height: 1.6;
@@ -405,6 +409,10 @@ body {
     letter-spacing: -0.1rem;
     margin-top: 6rem;
     margin-bottom: 2.75rem;
+  }
+
+  .hidden__mobile {
+    display: block;
   }
 
   .content__description {
