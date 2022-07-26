@@ -351,8 +351,13 @@ body {
   .nav__list li[data-active="true"] > .nav__sublist {
     max-height: 0;
   }
+  .nav__list li:hover .nav__arrow,
   .nav__list li[data-active="true"] .nav__arrow {
-    transform: rotate(0);
+    transform: rotate(180deg);
+  }
+
+  .nav__list li:hover .nav__arrow path {
+    stroke: var(--c-neutral-900);
   }
 
   /* Only active sublist on hover or focus */
